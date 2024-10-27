@@ -1,5 +1,10 @@
 import "./App.css";
 import Tweet from "./components/Tweet";
+import User from "./components/User";
+import ProfileImage from "./components/ProfileImage";
+import Timestamp from "./components/Timestamp";
+import Message from "./components/Message";
+import Actions from "./components/Actions";
 
 const tweetsArray = [
   {
@@ -40,7 +45,7 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      <Tweet tweet={ tweetsArray[0] }/>
     </div>
   );
 }
